@@ -76,8 +76,12 @@ WSGI_APPLICATION = 'proyecto_licitaciones.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'proyecto_licitaciones_db',
+        'USER': 'proyecto_licitaciones_db_user',
+        'PASSWORD': 'klDImYbNxbDXfEvR3IKUvKGYQ2K8vX1X',
+        'HOST': 'dpg-ct18jqjtq21c73emllm0-a.render.com',
+        'PORT': '5432',
     }
 }
 
